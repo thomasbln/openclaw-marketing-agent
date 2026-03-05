@@ -2,16 +2,16 @@
 
 This **OpenClaw** AI Agent blueprint brings **Problem–Market Observability** to life: it scans Hacker News, Google News, and X.com for market signals, analyzes them via LLM, and delivers daily alignment digests to Telegram.
 
-Designed to complement the article: *[Detecting Problem–Market Drift Before Your Metrics Break](https://medium.com/@thomasrehmer/stop-guessing-detect-problem-market-drift-with-an-openclaw-agent-2a41679b556d)*.
+**📖 Read the article:** [**Detecting Problem–Market Drift Before Your Metrics Break**](https://medium.com/@thomasrehmer/stop-guessing-detect-problem-market-drift-with-an-openclaw-agent-2a41679b556d)
 
 ---
 
 ### What it does
 
-* **Signal Radar:** Automated scanning of Hacker News, Google News, and X.com for specific friction signals (churn, conversion drops, market complaints).
-* **OpenClaw Agent:** A dedicated skill that classifies raw signals against your product's core messaging.
-* **Telegram Interface:** A simple, command-driven interface to query trends (`/trend`), get weekly briefs (`/brief`), or inspect specific problems (`/problem`).
-* **Daily Digest:** A cron-triggered report that keeps the team aligned on market shifts.
+* **Signal Radar:** Multi-source scanning (Hacker News, Google News, X.com) for friction signals (churn, conversion, complaints).
+* **OpenClaw Agent:** Intelligent classification using LLMs (Claude/GPT) against your product's core messaging.
+* **Strategic Insights:** Automated Problem–Market Alignment reports (daily digest, trend comparison, language gaps).
+* **Telegram Interface:** Command-driven access to `/trend`, `/brief`, `/problem`, and `/wording 7d`.
 
 ### Quick Start
 
