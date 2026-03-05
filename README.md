@@ -4,6 +4,8 @@ A build-it-yourself setup for problem–market observability: scan Hacker News, 
 
 **No secrets in this repo.** Copy example files, add your API keys to `.env`, and you're good to go.
 
+This is a **demo/blueprint agent** – feel free to fork, adapt, and improve it for your own use case.
+
 ---
 
 ## What it does
