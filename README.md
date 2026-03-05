@@ -2,7 +2,7 @@
 
 A build-it-yourself blueprint for **Problem–Market Observability**. This agent scans Hacker News, Google News, and X.com for external signals, analyzes them via an OpenClaw agent, and delivers daily alignment digests directly to Telegram.
 
-Designed to complement the article: *Detecting Problem–Market Drift Before Your Metrics Break* (add Medium link when published).
+Designed to complement the article: *[Detecting Problem–Market Drift Before Your Metrics Break](https://medium.com/@thomasrehmer/stop-guessing-detect-problem-market-drift-with-an-openclaw-agent-2a41679b556d)*.
 
 ---
 
