@@ -1,6 +1,6 @@
-# Market Signal Radar
+# Market Signal Radar — AI Agent for Problem-Market Drift Detection
 
-A build-it-yourself blueprint for **Problem–Market Observability**. This agent scans Hacker News, Google News, and X.com for external signals, analyzes them via an OpenClaw agent, and delivers daily alignment digests directly to Telegram.
+This **OpenClaw** AI Agent blueprint brings **Problem–Market Observability** to life: it scans Hacker News, Google News, and X.com for market signals, analyzes them via LLM, and delivers daily alignment digests to Telegram.
 
 Designed to complement the article: *[Detecting Problem–Market Drift Before Your Metrics Break](https://medium.com/@thomasrehmer/stop-guessing-detect-problem-market-drift-with-an-openclaw-agent-2a41679b556d)*.
 
@@ -43,6 +43,9 @@ This is a **demo and blueprint agent**. It is functional out of the box but desi
 │ digest.sh         │     │ plugin (tools)   │   │  or Channel  │
 └───────────────────┘     └──────────────────┘   └──────────────┘
 ```
+
+**Stack:** Node.js, PostgreSQL (pgvector), Docker, OpenClaw.  
+**Sources:** Hacker News, Google News RSS, X.com.
 
 ---
 
