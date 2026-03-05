@@ -232,3 +232,7 @@ To let the bot trigger scans via Telegram:
 ## License
 
 MIT
+
+---
+
+crafted by [thomas](https://medium.com/@thomasbln) @ [awareo.io](https://awareo.io)
