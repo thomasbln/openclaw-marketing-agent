@@ -1,6 +1,6 @@
 ---
 name: market-radar
-description: Signal output format + Commands /brief, /hooks, /problem, /wording 7d, /alignment
+description: Signal output format + Commands /brief, /trend, /hooks, /problem, /wording 7d, /alignment
 ---
 
 # Market Radar – Output & Commands
@@ -57,6 +57,10 @@ Review messaging | Drift: ±X% WoW
 
 `get_signals(since_days: 7, limit: 80)` → Dominant themes, market focus, narrative recommendation.
 
+### /trend
+
+`get_trend(days_a, days_b)` → Compares signal frequency across time windows (e.g. last 7 days vs last 30 days per source). Returns period_a, period_b, delta, delta_pct.
+
 ### /hooks
 
 `get_signals(limit: 80)` → 5 emotional LinkedIn post hooks.
@@ -103,11 +107,11 @@ Gap between Radar and Yours: [1–2 sentences – concrete recommendation]
 
 - "Source Stats" → get_source_stats
 - "Latest signals" → get_signals
-- "Trend 7 days" → get_trend
+- "/trend", "Trend", "Trend 7 days" → get_trend
 - "Alignment Check" → Daily Alignment Check
-- "Brief 7d" → /brief 7d
+- "Brief 7d", "/brief 7d" → /brief 7d
 - "Hooks" → /hooks
-- "Problem X" → /problem X
+- "Problem X", "/problem X" → /problem X
 - "wording 7d", "Language patterns 7 days", "What do people say" → /wording 7d (get_signals + get_messaging)
 - "X.com entries", "Twitter signals" → get_signals with source: "x" (EN only)
 - "Start scanner", "Start now", "Scan now", "Run scanner", "run_scanner" → run_scanner
