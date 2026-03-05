@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+pg_data/
+node_modules/
+.DS_Store
+medium
+
+# OpenClaw user config (secrets)
+openclaw/config/openclaw.json
+openclaw/config/agents/

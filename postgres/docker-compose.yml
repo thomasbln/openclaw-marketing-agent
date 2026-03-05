@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: ankane/pgvector
+    container_name: pgvector-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: changeme
+      POSTGRES_DB: postgres
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - ./pg_data:/var/lib/postgresql/data
+    networks:
+      - radar-net
+
+networks:
+  radar-net:
+    external: true

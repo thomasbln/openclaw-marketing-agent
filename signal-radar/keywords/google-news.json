@@ -1,0 +1,23 @@
+{
+  "sources": [
+    {
+      "name": "google_news_en",
+      "params": "hl=en-US&gl=US&ceid=US:en",
+      "keywords": [
+        "customer AND churn",
+        "subscription AND cancel",
+        "why AND customers AND leave",
+        "conversion AND rate",
+        "cart AND abandonment",
+        "customer AND complaint",
+        "product AND review AND disappointed",
+        "switched AND provider",
+        "best AND purchase AND 2024",
+        "would not recommend",
+        "return AND product AND reason",
+        "customer AND retention",
+        "unsubscribe AND reason"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "legal-tech-signal-radar",
+  "version": "1.0.0",
+  "description": "Signal Radar for pain-point discovery (HN + Google News EN)",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "pg": "^8.13.0",
+    "rss-parser": "^3.13.0"
+  }
+}

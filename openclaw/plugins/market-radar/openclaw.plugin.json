@@ -1,0 +1,1 @@
+{"id":"market-radar","name":"Market Signal Radar","version":"0.1.0","description":"DB tools for Signal Radar (stats, signals, trend, messaging, run_scanner)","configSchema":{"type":"object","additionalProperties":false,"properties":{}}}

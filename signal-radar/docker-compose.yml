@@ -1,0 +1,15 @@
+services:
+  signal-radar:
+    image: signal-radar_signal-radar
+    build: .
+    container_name: signal-radar
+    env_file:
+      - .env
+    command: node index.js
+    networks:
+      - radar-net
+    restart: "no"
+
+networks:
+  radar-net:
+    external: true

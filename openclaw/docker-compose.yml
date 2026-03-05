@@ -1,0 +1,37 @@
+services:
+  openclaw-gateway:
+    image: ghcr.io/openclaw/openclaw:latest
+    container_name: openclaw
+    group_add:
+      - "docker"  # Docker socket access for run_scanner (or GID e.g. "1001")
+    env_file:
+      - .env
+    environment:
+      HOME: /home/node
+      TERM: xterm-256color
+    volumes:
+      - ./config:/home/node/.openclaw
+      - ./workspace:/home/node/.openclaw/workspace
+      - ./plugins:/home/node/.openclaw/plugins
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "127.0.0.1:18789:18789"
+    restart: unless-stopped
+    init: true
+    command:
+      [
+        "node",
+        "dist/index.js",
+        "gateway",
+        "--bind",
+        "loopback",
+        "--port",
+        "18789",
+        "--allow-unconfigured",
+      ]
+    networks:
+      - radar-net
+
+networks:
+  radar-net:
+    external: true
