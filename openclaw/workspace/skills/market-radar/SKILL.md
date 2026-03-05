@@ -1,6 +1,6 @@
 ---
 name: market-radar
-description: Signal output format + Commands /brief, /trend, /hooks, /problem, /wording 7d, /alignment
+description: Signal output format + Commands /brief, /trend, /hooks, /problem, /wording 7d. Daily Alignment Check (cron 07:00 UTC).
 ---
 
 # Market Radar – Output & Commands
@@ -20,6 +20,20 @@ Link: [URL]
 - **Relevance 1–10:** Market/problem relevance (e.g. churn, conversion, access, conflict)
 - **Pain 1–10:** Emotional pressure, urgency
 - **Insight:** Derive from title+snippet. No fabrication.
+
+---
+
+## Example scenario (Shipping / E-Commerce)
+
+**Context:** Product messaging = "Fast delivery for everyone. No hidden fees, clear pricing at checkout." Core problem = high shipping costs killing conversion.
+
+**Sample signals to classify:**
+
+- "Shoppers abandon cart when shipping cost appears at checkout"
+- "Free shipping threshold frustrates small orders"
+- "Unexpected delivery prices – survey says #1 complaint"
+
+**Expected style:** Rate Relevance and Pain from real wording; Insight = one sentence on market/problem; Emotion = e.g. frustration, surprise. For /wording 7d or /problem shipping: contrast "Radar (market)" phrases (e.g. "shipping at checkout", "hidden delivery cost") with "Yours" (headline + pain_block) and recommend moving copy closer to how people actually complain.
 
 ---
 

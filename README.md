@@ -1,18 +1,30 @@
 # Market Signal Radar
 
-A build-it-yourself setup for problem–market observability: scan Hacker News, Google News, and X.com for signals, analyze them with an OpenClaw agent via Telegram, and get daily digests. Complements the Medium article on detecting alignment drift before metrics break.
+A build-it-yourself blueprint for **Problem–Market Observability**. This agent scans Hacker News, Google News, and X.com for external signals, analyzes them via an OpenClaw agent, and delivers daily alignment digests directly to Telegram.
 
-**No secrets in this repo.** Copy example files, add your API keys to `.env`, and you're good to go.
-
-This is a **demo/blueprint agent** – feel free to fork, adapt, and improve it for your own use case.
+Designed to complement the article: *Detecting Problem–Market Drift Before Your Metrics Break* (add Medium link when published).
 
 ---
 
-## What it does
+### What it does
 
-1. **Signal Radar** – Collects articles from Hacker News, Google News, and X.com (generic marketing-KPI topics: churn, conversion, retention, complaints, etc.)
-2. **OpenClaw Bot** – Telegram bot that queries the signal database, runs analysis, and can trigger new scans
-3. **Daily Digest** – Cron job runs the scanner and sends a formatted digest to your Telegram channel
+* **Signal Radar:** Automated scanning of Hacker News, Google News, and X.com for specific friction signals (churn, conversion drops, market complaints).
+* **OpenClaw Agent:** A dedicated skill that classifies raw signals against your product's core messaging.
+* **Telegram Interface:** A simple, command-driven interface to query trends (`/trend`), get weekly briefs (`/brief`), or inspect specific problems (`/problem`).
+* **Daily Digest:** A cron-triggered report that keeps the team aligned on market shifts.
+
+### Quick Start
+
+1. **Clone the repo.**
+2. **Setup Environment:** Copy the `.env.example` files in the subfolders and add your API keys.
+3. **No Secrets:** This repo contains no secrets or pre-configured keys.
+4. **Deploy:** Use the provided `docker-compose` files to spin up the Postgres DB and the Agent. See detailed steps below.
+
+---
+
+### Fork & Adapt
+
+This is a **demo and blueprint agent**. It is functional out of the box but designed to be extended. **Feel free to fork, adapt, and improve it for your own specific use case.** If you build something cool on top of this or find a better way to detect drift, pull requests and feedback are always welcome.
 
 ---
 
