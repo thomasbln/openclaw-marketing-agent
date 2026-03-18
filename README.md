@@ -238,4 +238,4 @@ MIT
 
 ---
 
-crafted by [thomas](https://medium.com/@thomasbln) @ [awareo.io](https://awareo.io)
+crafted by [thomas](https://medium.com/@thomasrehmer) @ [awareo.io](https://awareo.io)
